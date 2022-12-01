@@ -2,16 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-   
+@layer components {
+    .card{
+        @apply rounded-xl shadow-lg
+    }
 }
-
 body {
     background: rgb(27, 27, 27);
 }
@@ -292,84 +287,42 @@ h1 {
     background-color: #555;
     color: white;
   }
-  .text button a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-  }
-.main-section{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.card{
-    background: white; 
-    width: 400px;
-    height: 400px;
-    margin: 10px;
-    border-radius: 7px;
-}
-.card-image{
-    background-color: aqua;
-    height: 250px;
-    margin-bottom: 5px;
-    border-radius: 7px 7px 0 0;
-}
-.car-1{
-    background-image: url("/img/BWM\ \(1\).jpg");
-    cursor: pointer;
-}
-.car-2{
-    background-image: url("/img/Ford\ \(1\).jpg");
-    cursor: pointer;
-}
-.car-3{
-    background-image: url("/img/Hunda.jpg");
-    cursor: pointer;
-}
-.card a{
-    background-color: #356685;
-    color: white;
-    font-weight: bold;
-    padding: 15px 20px;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-}
- .card p{
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: sans-serif;
-    margin: 5px;
-}
-.card a{
-    margin: 20px;
-    border-radius: 7px;
-}
-.card:hover{
+  .card:hover{
     background-color: #555;
     color: white;
     cursor: pointer;
     transform: scale(1.03);
     transition: all 0.5s ease;
 }
-.carr-1{
-    background-image: url("/img/Nissan.png");
-    cursor: pointer;
-}
-.carr-2{
-    background-image: url("/img/Volvo.png");
-    cursor: pointer;
-}
-.carr-3{
-    background-image: url("/img/Volkswagen.jpg");
-    cursor: pointer;
-}
-.copyright{
-    text-align: center;
+  .text button a {
+    text-decoration: none;
     color: #fff;
     font-size: 20px;
-    font-weight: bold;
+  }
+  .about{
+    max-width: 1000%;
 }
+/*About page*/
+
+.about h2{
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin: 10px;
+}
+
+.about p{
+    color: #fff;
+    font-weight:100;
+    font-size: 25px;
+    margin: 20px;
+}
+
+.about ul {
+    padding: 35px;
+    color: #fff;
+    font-size: 20px;
+}
+/*Contact page*/
+
