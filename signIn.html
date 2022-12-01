@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://kit.fontawesome.com/67c66657c7.js"></script>
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="check">
+        <nav class="nav-container">
+            <div class="icon" > Auto <b style="color: red;">Auction</b></div>
+            <!-- <div class="search-item">
+                <input type="search" placeholder="Search here">
+                <span class="fa fa-search"></span>
+            </div> -->
+                <ul class="navbar-ul">
+                    <li class="li-navbar"><a href="index.html">Home</a></li>
+                    <li class="li-navbar"><a href="#">Auction</a></li>
+                    <li class="li-navbar"><a href="contact.html">Contact</a></li>
+                    <li class="li-navbar"><a href="about.html">Abuot us</a></li>
+                    <li class="li-navbar"><a href="signin.html">Login</a></li>
+                    <li class="li-navbar"><a href="singup.html">Sing up</a></li>
+                </ul>
+                <label for="check" class="bar">
+                    <span class="fa fa-bars" id="bars"></span>
+                    <span class="fa fa-times" id="times"></span>
+                </label>
+        </nav>
+    </header>
+    <main>
+        <div class="container mx-auto text-center pt-5 ">
+            <h1 class="text-xl  font-bold leading-tight tracking-tight text-gray-900 md:text-1x4 dark:text-white"> SING IN INTO YOUR ACCOUNT</h1>
+            <form  id="login-form" class="flex flex-col mx-auto gap-2.5 p-7 m-7 w-2/3 bg-gray-600 rounded-md text-left">
+                    <div >
+                        <label for="email" class="block mb-2 text-2x1  text-left font-medium text-white-900 dark:text-white">Your Email</label>
+                        <input type="text" name="email" id="email" class="bg-black-500 w-full font-medium rounded-md" placeholder="name@company.com">
+                        <span id="emailErrorNotValid" class=" hidden text-xl text-white-900">
+                            Please use  @stud.noroff.no or noroff.no email address!
+                        </span>
+                        <span id="emailError" class="hidden text-xl text-white-900">Email is required </span>
+                    </div>
+                    <div>
+                        <label for="password" class="block mb-2 text-2x1 text-left  font-medium text-gray-900  dark:text-white">Password</label>
+                        <input type="password" name="password" id="password" placeholder="••••••••" class="w-full  rounded-md bg-black-500">
+                        <span
+                            id="passwordError"
+                            class="hidden text-xl text-white-900">
+                            Password must be over 8 chars!
+                        </span>  
+                    </div>
+                    <div class="flex items-center justify-between">        
+                    </div>
+                <button type="submit" class="p-2 mt-3 font-bold text-black bg-white rounded text-2xl hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring uppercase focus:ring-violet-300">Sign in</button>
+                <p class="text-sm  text-white text-4x1 font-bold  ">
+                    Don't have an account yet? <a href="./singup.html" class="w-full text-white text-2x1 m-1 p-1 bg-blue-900 rounded">SING UP</a></p>
+                <p id="error-message" class="text-center text-white text-xl "></p>
+            </form>
+        </div> 
+        <footer>
+            <div  class="footer-container">
+              <nav class="footer-navv">
+                <ul>
+                  <h3>CONTACT US</h3>
+                  <br/>
+                  <li>Osloveien 14, 0176</li><br>
+                  <li>Telefone: +47 45454546</li><br>
+                  <li>Email: AutoAuction@liv.com</li>
+                </ul>
+              </nav>
+              <nav class="footer-navv">
+                <ul>
+                  <h3>ACCESIBILITY</h3>
+                  <br>
+                  <li>Service</li><br>
+                  <li>Apply Job</li><br>
+                  <li>Sell Your Car</li>
+                </ul>
+              </nav>
+              <nav class="footer-navv">
+                <ul>
+                  <h3>ABOUT US</h3>
+                  <br>
+                  <li>Terms Of Use </li><br>
+                  <li>Our Team </li><br>
+                  <li>Blog</li>
+                </ul>
+              </nav>
+            </div>
+        </footer>
+        <p class="copyright">Copyright © 2023 Auto Auction. All Rights Reserved</p>
+    </main>
+    <script type="module" src="/script/login.js" defer></script>
+    
+</body>
+</html>
