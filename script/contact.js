@@ -3,7 +3,7 @@ const email = document.querySelector("#email");
 const message = document.querySelector("#message");
 const success = document.querySelector("#success");
 const errorMessage = document.querySelectorAll(".error");
-
+if(!accessToken){location.href = "/signin.html"}
 function  validateForm(){
     clearMessages()
     let errorFlag = false;

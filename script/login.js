@@ -1,6 +1,10 @@
-import {SIGN_IN_URL} from "/script/api.js";
-import {validateEmail} from "/script/validation.js";
-import {saveUser, saveToken} from "/script/storage.js";
+import {SIGN_IN_URL} from "./api";
+import {validateEmail} from "./validation.js";
+import {saveUser, saveToken} from "./storage.js";
+
+const accessToken = saveToken;
+                  
+
 
 const logInForm = document.querySelector("#login-form");
 
@@ -13,6 +17,8 @@ const password = document.querySelector("#password");
 const passwordError = document.querySelector("#passwordError");
 
 const generalErrorMessage = document.querySelector("#error-message");
+
+
 
 if (logInForm) {
     logInForm.addEventListener("submit", function (event) {
@@ -51,6 +57,7 @@ if (logInForm) {
                 "email": email.value,
                 "password": password.value
             }
+            console.log(userData);
 
             const LOGIN_USER_URL_ENDPOINT = `${SIGN_IN_URL}`;
 
@@ -66,19 +73,17 @@ if (logInForm) {
                 if (response.ok) {
                     const data = await response.json();
 
-                    console.log(data);
-                    console.log(data.accessToken)
-                    // save Token
+                  
                     saveToken(data.accessToken);
                     // save user
                     const userToSave = {
                         name: data.name,
                         email: data.email
                     }
-                    console.log(userToSave);
+                  
                     saveUser(userToSave);
-                    console.log("POST REQUEST LOGIN SUCCEEDED!!  🥳 🤗🤗");
-                    location.href = "/index.html"
+                   
+                    location.href = "/welcome.html"
                 } else {
                     const err = await response.json();
                     const message = `An error occurred: ${err.message}`;
@@ -86,7 +91,7 @@ if (logInForm) {
                     throw new Error(message);
                 }
             })().catch(err => {
-                generalErrorMessage.innerHTML = `Sorry !! ${err.message}`
+                const message = alert("Password or Email is not currect, Please try again!")
             });
 
         } else {

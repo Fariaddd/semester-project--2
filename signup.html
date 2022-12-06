@@ -10,6 +10,9 @@
 </head>
 <body>
     <header>
+        <div id="nav-bar">
+
+        
         <input type="checkbox" id="check">
         <nav class="nav-container">
             <div class="icon" > Auto <b style="color: red;">Auction</b></div>
@@ -30,33 +33,34 @@
                     <span class="fa fa-times" id="times"></span>
                 </label>
         </nav>
+    </div>
     </header>
     <main>
         <div class="container mx-auto text-center pt-5 ">
             <h1 class="text-3xl mb-6 text-white  text-center">SIGN UP FREE AND GET 1000 KREDITS FREE</h1>
-            <form id="contact-form" class="flex flex-col mx-auto gap-2.5 p-7 m-7 w-2/3 bg-gray-600 rounded-md text-left">
+            <form id="contactForm" class="flex flex-col mx-auto gap-2.5 p-7 m-7 w-2/3 bg-gray-600 rounded-md text-left">
                 <div class="flex flex-col gap-1">
                     <label  for="firstName" class="block mb-2 text-1x2 text-left font-medium text-white-900 dark:text-white"> First Name (Required)</label>
                     <input id="firstName" class="p-2 rounded-md font-medium text-black" name="firstName" type="text" placeholder="Enter First Name">
-                    <span id="firstNameError" class="hidden text-xl text-white-900"> Enter your first name </span>
+                    <span id="firstNameError" class="hidden text-2xl text-red-500 text-white-900"> Enter your first name </span>
                 </div>
                 <div class="flex flex-col gap-1 ">
                     <label for="email" class="block mb-2 text-1X2 text-left font-medium text-white-900 dark:text-white">Email (Required) </label>
                     <input id="email" class="p-2 rounded" name="email" type="text" placeholder="Enter email">
-                    <span id="emailErrorNotValid" class="hidden text-xl text-white-900">Email must be a valid email from @ stud.noroff.no or noroff.no</span>
-                    <span id="emailError" class="hidden text-xl text-yellow-900">Email is required!</span>
+                    <span id="emailErrorNotValid" class="hidden  text-xl text-white-900">Email must be a valid email from @ stud.noroff.no or noroff.no</span>
+                    <span id="emailError" class="hidden text-2xl text-red-500">Email is required!</span>
                 </div>
                 <div class="flex flex-col gap-1">
                     <label for="password" class="block mb-2 text-1x2 text-left font-medium text-white-900 dark:text-white">Password (Required) </label>
                     <input id="password" class="p-2 rounded-" name="password" type="password" placeholder="••••••••">
                     <span id="passwordError" class="hidden text-xl text-white-900"> Password must be over 8 chars!</span>
-                    <span id="passwordErrorNotValid" class="hidden text-xl text-white-900">Password is not valid!</span>
+                    <span id="passwordErrorNotValid" class="hidden text-2xl text-red-500">Password is not valid!</span>
                 </div>
                 <div class="flex flex-col gap-1">
                     <label for="confirm_password" class="block mb-2 text-1x2 text-left font-medium text-white-900 dark:text-white">Confirm Password again </label>
                     <input id="confirm_password" class="p-2 rounded" name="password" type="password" placeholder="••••••••">
-                    <span id="confirmPasswordErrorNotMatching" class="hidden text-xl text-white-900">Password doesn't match!</span>
-                    <span id="confirmPasswordError" class="hidden text-xl text-white-900"> Confirm Password is required and must be over 8 chars!</span>
+                    <span id="confirmPasswordErrorNotMatching" class="hidden text-2xl text-red-500">Password doesn't match!</span>
+                    <span id="confirmPasswordError" class="hidden text-2xl text-red-500"> Confirm Password is required and must be over 8 chars!</span>
                 </div>
                     <button class="p-2 mt-3 text-black bg-white rounded text-2xl hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300" type="submit">SIGN UP</button>
             </form>
@@ -95,6 +99,6 @@
         </footer>
         <p class="text-center text-white font-semibold m-2">Copyright © 2023 Auto Auction. All Rights Reserved</p>
     </main>
-    <script type="module" src="/script/login.js" defer></script>
+    <script type="module" src="/script/signup.js" defer></script>
 </body>
 </html>
