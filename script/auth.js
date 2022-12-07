@@ -3,7 +3,7 @@ import { getUserName } from "./storage.js";
 
 function headerBar(){
     const {pathname} = document.location;
-    const navbar = document.querySelector("#navbar")
+    let navbar = document.querySelector("#nav-bar")
     if(navbar){
         const userName = getUserName();
         let navLinks;
@@ -17,6 +17,10 @@ function headerBar(){
             <li class="p-8"><button id="logOut">LogOut</button></li>
             `
         }
+        navbar.innerHTML = `
+        <ul class="flex">
+           ${navLinks}
+        </ul>`
     }
 }
 export {headerBar}
