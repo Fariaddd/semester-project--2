@@ -1,2 +1,13 @@
-import '/style.css'
-if(!accessToken){location.href = "/signin.html"}
+import { clearStorage } from "./storage";
+import {headerBar } from "./auth.js"
+
+headerBar();
+const logOutBtn = document.querySelector("#logOut");
+
+if (logOutBtn) {
+    logOutBtn.addEventListener("click", function () {
+        console.log("I am clicked");
+        clearStorage();
+        window.location.replace("/login.html");
+    })
+}

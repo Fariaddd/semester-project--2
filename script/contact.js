@@ -3,7 +3,7 @@ const email = document.querySelector("#email");
 const message = document.querySelector("#message");
 const success = document.querySelector("#success");
 const errorMessage = document.querySelectorAll(".error");
-if(!accessToken){location.href = "/signin.html"}
+
 function  validateForm(){
     clearMessages()
     let errorFlag = false;
@@ -13,7 +13,7 @@ function  validateForm(){
     errorFlag = true;
   }
   if(!emailIsValid(email.value)){
-    errorMessage[1].innerText = "Invaid email address";
+    errorMessage[1].innerText = "Invaid email address, it must be @stud.noroff.no or @noroff.no";
     email.classList.add("error-border")
     errorFlag = true;
   }
