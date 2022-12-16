@@ -1,101 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SignIn</title>
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/style.css" />
     <script src="http://kit.fontawesome.com/67c66657c7.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-            <input type="checkbox" id="check">
-            <nav class="nav-container">
-              <div class="icon" > <a href="/index.html">  Auto <b style="color: red;">Auction</b></a></div>                <!-- <div class="search-item">
+      <input type="checkbox" id="check" />
+      <nav class="nav-container">
+        <div class="icon">
+          <a href="/index.html"> Auto <b style="color: red">Auction</b></a>
+        </div>
+        <!-- <div class="search-item">
                     <input type="search" placeholder="Search here">
                     <span class="fa fa-search"></span>
                 </div> -->
-                    <ul class="navbar-ul" id="nav-bar">
-                        <li class="li-navbar"><a href="index.html">Home</a></li>
-                        <li class="li-navbar"><a href="#">Auction</a></li>
-                        <li class="li-navbar"><a href="contact.html">Contact</a></li>
-                        <li class="li-navbar"><a href="about.html">Abuot us</a></li>
-                        <li class="li-navbar"><a href="signin.html">Login</a></li>
-                        <li class="li-navbar"><a href="signup.html">Sing up</a></li>
-                    </ul>
-                    <label for="check" class="bar">
-                        <span class="fa fa-bars" id="bars"></span>
-                        <span class="fa fa-times" id="times"></span>
-                    </label>
-            </nav>
-    </div>
+        <ul class="navbar-ul" id="nav-bar">
+          <li class="li-navbar"></li>
+        </ul>
+        <label for="check" class="bar">
+          <span class="fa fa-bars" id="bars"></span>
+          <span class="fa fa-times" id="times"></span>
+        </label>
+      </nav>
     </header>
     <main>
-        <div class="container mx-auto text-center pt-5 ">
-            <h1 class="text-3xl mb-6 text-white  text-center">SIGN UP FREE AND GET 1000 KREDITS FREE</h1>
-            <form id="contactForm" class="flex flex-col mx-auto gap-2.5 p-7 m-7 w-2/3 bg-gray-600 rounded-md text-left">
-                <div class="flex flex-col gap-1">
-                    <label  for="firstName" class="block mb-2 text-1x2 text-left font-medium text-white-900 dark:text-white"> First Name (Required)</label>
-                    <input id="firstName" class="p-2 rounded-md font-medium text-black" name="firstName" type="text" placeholder="Enter First Name">
-                    <span id="firstNameError" class="hidden text-2xl text-red-500 text-white-900"> Enter your first name </span>
-                </div>
-                <div class="flex flex-col gap-1 ">
-                    <label for="email" class="block mb-2 text-1X2 text-left font-medium text-white-900 dark:text-white">Email (Required) </label>
-                    <input id="email" class="p-2 rounded" name="email" type="text" placeholder="Enter email">
-                    <span id="emailErrorNotValid" class="hidden  text-xl text-white-900  text-red-500">Email must be a valid email from @ stud.noroff.no or noroff.no</span>
-                    <span id="emailError" class="hidden text-2xl text-red-500">Email is required!</span>
-                </div>
-                <div class="flex flex-col gap-1">
-                    <label for="password" class="block mb-2 text-1x2 text-left font-medium text-white-900 dark:text-white">Password (Required) </label>
-                    <input id="password" class="p-2 rounded-" name="password" type="password" placeholder="••••••••">
-                    <span id="passwordError" class="hidden text-xl text-white-900 text-red-500"> Password must be over 8 chars!</span>
-                    <span id="passwordErrorNotValid" class="hidden text-2xl text-red-500">Password is not valid!</span>
-                </div>
-                <div class="flex flex-col gap-1">
-                    <label for="confirm_password" class="block mb-2 text-1x2 text-left font-medium text-white-900 dark:text-white">Confirm Password again </label>
-                    <input id="confirm_password" class="p-2 rounded" name="password" type="password" placeholder="••••••••">
-                    <span id="confirmPasswordErrorNotMatching" class="hidden text-2xl text-red-500">Password doesn't match!</span>
-                    <span id="confirmPasswordError" class="hidden text-2xl text-red-500"> Confirm Password is required and must be over 8 chars!</span>
-                </div>
-                    <button class="p-2 mt-3 text-black bg-white rounded text-2xl hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300" type="submit">SIGN UP</button>
-            </form>
-            <p id="error-message"  class=" text-center  text-xl text-yellow-900"></p>
-        </div>    
-        <footer>
-            <div  class="footer-container">
-              <nav class="footer-navv">
-                <ul>
-                  <h3>CONTACT US</h3>
-                  <br/>
-                  <li>Osloveien 14, 0176</li><br>
-                  <li>Telefone: +47 45454546</li><br>
-                  <li>Email: AutoAuction@liv.com</li>
-                </ul>
-              </nav>
-              <nav class="footer-navv">
-                <ul>
-                  <h3>ACCESIBILITY</h3>
-                  <br>
-                  <li>Service</li><br>
-                  <li>Apply Job</li><br>
-                  <li>Sell Your Car</li>
-                </ul>
-              </nav>
-              <nav class="footer-navv">
-                <ul>
-                  <h3>ABOUT US</h3>
-                  <br>
-                  <li>Terms Of Use </li><br>
-                  <li>Our Team </li><br>
-                  <li>Blog</li>
-                </ul>
-              </nav>
-            </div>
-        </footer>
-        <p class="text-center text-white font-semibold m-2">Copyright © 2023 Auto Auction. All Rights Reserved</p>
+      <div class="container mx-auto text-center pt-5">
+        <h1 class="text-3xl mb-6 text-white text-center">
+          SIGN UP FREE AND GET 1000 KREDITS FREE
+        </h1>
+        <form
+          id="contactForm"
+          class="flex flex-col mx-auto gap-2.5 p-7 m-7 w-2/3 bg-gray-600 rounded-md text-left">
+          <div class="flex flex-col gap-1">
+            <label
+              for="firstName"
+              class="block mb-2 text-1x2 text-left font-medium text-white-900 dark:text-white">
+              First Name (Required)</label
+            >
+            <input
+              id="firstName"
+              class="p-2 rounded-md font-medium text-black"
+              name="firstName"
+              type="text"
+              placeholder="Enter First Name" />
+            <span
+              id="firstNameError"
+              class="hidden text-2xl text-red-500 text-white-900">
+              Enter your first name
+            </span>
+          </div>
+          <div class="flex flex-col gap-1">
+            <label
+              for="email"
+              class="block mb-2 text-1X2 text-left font-medium text-white-900 dark:text-white"
+              >Email (Required)
+            </label>
+            <input
+              id="email"
+              class="p-2 rounded"
+              name="email"
+              type="text"
+              placeholder="Enter email" />
+            <span
+              id="emailErrorNotValid"
+              class="hidden text-xl text-white-900 text-red-500"
+              >Email must be a valid email from @ stud.noroff.no or
+              noroff.no</span
+            >
+            <span id="emailError" class="hidden text-2xl text-red-500"
+              >Email is required!</span
+            >
+          </div>
+          <div class="flex flex-col gap-1">
+            <label
+              for="password"
+              class="block mb-2 text-1x2 text-left font-medium text-white-900 dark:text-white"
+              >Password (Required)
+            </label>
+            <input
+              id="password"
+              class="p-2 rounded-"
+              name="password"
+              type="password"
+              placeholder="••••••••" />
+            <span
+              id="passwordError"
+              class="hidden text-xl text-white-900 text-red-500">
+              Password must be over 8 chars!</span
+            >
+            <span
+              id="passwordErrorNotValid"
+              class="hidden text-2xl text-red-500"
+              >Password is not valid!</span
+            >
+          </div>
+          <div class="flex flex-col gap-1">
+            <label
+              for="confirm_password"
+              class="block mb-2 text-1x2 text-left font-medium text-white-900 dark:text-white"
+              >Confirm Password again
+            </label>
+            <input
+              id="confirm_password"
+              class="p-2 rounded"
+              name="password"
+              type="password"
+              placeholder="••••••••" />
+            <span
+              id="confirmPasswordErrorNotMatching"
+              class="hidden text-2xl text-red-500"
+              >Password doesn't match!</span
+            >
+            <span
+              id="confirmPasswordError"
+              class="hidden text-2xl text-red-500">
+              Confirm Password is required and must be over 8 chars!</span
+            >
+          </div>
+          <button
+            class="p-2 mt-3 text-black bg-white rounded text-2xl hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300"
+            type="submit">
+            SIGN UP
+          </button>
+        </form>
+        <p id="error-message" class="text-center text-xl text-yellow-900"></p>
+      </div>
+      <footer>
+        <div class="footer-container">
+          <nav class="footer-navv">
+            <ul>
+              <h3>CONTACT US</h3>
+              <br />
+              <li>Osloveien 14, 0176</li>
+              <br />
+              <li>Telefone: +47 45454546</li>
+              <br />
+              <li>Email: AutoAuction@liv.com</li>
+            </ul>
+          </nav>
+          <nav class="footer-navv">
+            <ul>
+              <h3>ACCESIBILITY</h3>
+              <br />
+              <li>Service</li>
+              <br />
+              <li>Apply Job</li>
+              <br />
+              <li>Sell Your Car</li>
+            </ul>
+          </nav>
+          <nav class="footer-navv">
+            <ul>
+              <h3>ABOUT US</h3>
+              <br />
+              <li>Terms Of Use</li>
+              <br />
+              <li>Our Team</li>
+              <br />
+              <li>Blog</li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+      <p class="text-center text-white font-semibold m-2">
+        Copyright © 2023 Auto Auction. All Rights Reserved
+      </p>
     </main>
     <script type="module" src="/script/signup.js" defer></script>
     <script type="module" src="/script/index.js" defer></script>
-</body>
+  </body>
 </html>

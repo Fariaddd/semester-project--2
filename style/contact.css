@@ -1,58 +1,60 @@
-body{
-    background-image: url("/img/CARS.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+body {
+  background-image: url("/img/CARS.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#overlay{
-    position: relative;
-    top: -80px;
+#overlay {
+  position: relative;
+  top: -80px;
 }
 
 form {
-    max-width: 550px;
-    width: 90%;
-    background: rgb(71 85 105);
-    margin: 17vh auto 0 auto;
-    padding: 40px;
-    border-radius: 7px;
-    box-sizing: border-box;
+  max-width: 550px;
+  width: 90%;
+  background: rgb(71 85 105);
+  margin: 17vh auto 0 auto;
+  padding: 40px;
+  border-radius: 7px;
+  box-sizing: border-box;
 }
-h3{
-    margin: 0;
-    text-align: center;
-    color: #fff
+h3 {
+  margin: 0;
+  text-align: center;
+  color: #fff;
 }
-label{
-    display: block;
-    margin: 20px 0;
+label {
+  display: block;
+  margin: 20px 0;
 }
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    outline: none;
-    resize: none;
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: none;
+  resize: none;
 }
 
-input[type="text"]:focus, textarea:focus{
-    border-bottom: 1px solid rgb(255,0,106);
+input[type="text"]:focus,
+textarea:focus {
+  border-bottom: 1px solid rgb(255, 0, 106);
 }
-textarea::-webkit-scrollbar{
-    width: 8px;
+textarea::-webkit-scrollbar {
+  width: 8px;
 }
-textarea::-webkit-scrollbar-thumb{
-    background-color: rgb(255, 0, 106);
+textarea::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 0, 106);
 }
-.center input{
-    text-align: center;
+.center input {
+  text-align: center;
 }
-.error{
-    color: red;
+.error {
+  color: red;
 }
-.error-border{
-    border-bottom: 1px solid red;
+.error-border {
+  border-bottom: 1px solid red;
 }
-#success{
-    color: #28A745;
+#success {
+  color: #28a745;
 }

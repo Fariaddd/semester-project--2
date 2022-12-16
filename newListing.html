@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="/style/style.css" />
+    <script src="http://kit.fontawesome.com/67c66657c7.js"></script>
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" id="check" />
+      <nav class="nav-container">
+        <div class="icon">
+          <a href="/index.html"> Auto <b style="color: red">Auction</b></a>
+        </div>
+        <div class="search-item">
+          <input type="search" placeholder="Search here" />
+          <span class="fa fa-search"></span>
+        </div>
+        <ul class="navbar-ul" id="nav-bar">
+          <li class="li-navbar"></li>
+        </ul>
+        <label for="check" class="bar">
+          <span class="fa fa-bars" id="bars"></span>
+          <span class="fa fa-times" id="times"></span>
+        </label>
+      </nav>
+    </header>
+    <main class="container mx-auto p-10">
+      <h2
+        class="mb-4 text-2xl font-semibold text-white mt-4 uppercase text-center">
+        Create a list
+      </h2>
+      <form
+        id="create-post-form"
+        class="flex flex-col mx-auto gap-2.5 p-7 m-7 w-2/3 bg-gray-600 rounded-md border shadow">
+        <div class="flex flex-col gap-y-1">
+          <label for="ListingTitle" class="text-white font-semibold"
+            >List Title: (Required)
+          </label>
+          <input
+            id="ListingTitle"
+            class="p-2 rounded-md"
+            name="ListingTitle"
+            type="text"
+            placeholder="Enter a list title" />
+          <!-- <span id="listTitleError" class="hidden text-sm text-red-500">
+                    Post Title is required
+                </span> -->
+        </div>
+        <div class="flex flex-col gap-y-1">
+          <label for="ListDescription" class="text-white font-semibold">
+            List Description: (Required)
+          </label>
+          <textarea
+            rows="3"
+            name="ListDescription"
+            id="ListDescription"
+            class="block w-full resize-none border-0 placeholder-gray-400 focus:ring-0 sm:text-sm p-2 rounded-md"
+            placeholder="Write a description of your car..."></textarea>
+          <!-- <span id="postDescriptionError" class="hidden text-sm text-red-500">
+                    List Description is required
+                </span> -->
+        </div>
+        <h3
+          class="mb-4 text-2xl font-semibold text-white text-center uppercase">
+          Add tags for your list
+        </h3>
+        <div class="flex flex-col gap-y-1">
+          <label for="listTags" class="text-white font-semibold">
+            List tag: (optional)
+          </label>
+          <input
+            type="text"
+            name="listTags"
+            id="listTags"
+            class="block w-full resize-none border-0 placeholder-gray-400 focus:ring-0 sm:text-sm p-2 rounded-md"
+            placeholder="Write a description of your car..." />
+          <!-- <span id="listtagsDescriptionError" class="hidden text-sm text-red-500">
+                    List Description is required
+                    </span> -->
+        </div>
+        <h3
+          class="mb-4 text-2xl font-semibold text-white text-center uppercase">
+          Add images URL for your listing
+        </h3>
+        <div class="flex flex-col gap-y-1">
+          <label for="listImgOne" class="text-white font-semibold">
+            Image URL: (optional)
+          </label>
+          <input
+            type="text"
+            name="istImgOne"
+            id="listImgOne"
+            class="block w-full resize-none border-0 placeholder-gray-400 focus:ring-0 sm:text-sm p-2 rounded-md"
+            placeholder="Write a description of your car..." />
+        </div>
+        <div class="flex flex-col gap-y-1">
+          <label for="listingEndDate" class="text-gray-600"
+            >List End Dare: (required)
+          </label>
+          <input
+            id="listingEndDate"
+            name="listingEndDate"
+            type="datetime-local"
+            class="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+            placeholder="2020-01-01T00:00:00.000Z" />
+        </div>
+        <button
+          class="p-2 mt-3 font-bold text-black bg-white rounded text-2xl hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring uppercase focus:ring-violet-300"
+          type="submit">
+          create
+        </button>
+      </form>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <nav class="footer-navv">
+          <ul>
+            <h3 class="text-white">CONTACT US</h3>
+            <br />
+            <li>Osloveien 14, 0176</li>
+            <br />
+            <li>Telefone: +47 45454546</li>
+            <br />
+            <li>Email: AutoAuction@liv.com</li>
+          </ul>
+        </nav>
+        <nav class="footer-navv">
+          <ul>
+            <h3 class="text-white">ACCESIBILITY</h3>
+            <br />
+            <li>Service</li>
+            <br />
+            <li>Apply Job</li>
+            <br />
+            <li>Sell Your Car</li>
+          </ul>
+        </nav>
+        <nav class="footer-navv">
+          <ul>
+            <h3 class="text-white">ABOUT US</h3>
+            <br />
+            <li>Terms Of Use</li>
+            <br />
+            <li>Our Team</li>
+            <br />
+            <li>Blog</li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <p class="text-center text-white font-semibold">
+      Copyright © 2023 Auto Auction. All Rights Reserved
+    </p>
+    <script type="module" src="/script/index.js" defer></script>
+    <script type="module" src="/script/auth.js" defer></script>
+    <script type="module" src="/script/newListing.js" defer></script>
+  </body>
+</html>

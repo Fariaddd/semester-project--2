@@ -1,90 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link rel="stylesheet" href="/style/style.css">
-    <link rel="stylesheet" href="/style/contact.css">
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="/style/contact.css" />
     <script src="http://kit.fontawesome.com/67c66657c7.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-            <input type="checkbox" id="check">
-            <nav class="nav-container">
-              <div class="icon" > <a href="/index.html">  Auto <b style="color: red;">Auction</b></a></div>                <div class="search-item">
-                    <input type="search" placeholder="Search here">
-                    <span class="fa fa-search"></span>
-                </div>
-                    <ul class="navbar-ul" id="nav-bar">
-                        <li class="li-navbar"><a href="index.html">Home</a></li>
-                        <li class="li-navbar"><a href="#">Auction</a></li>
-                        <li class="li-navbar"><a href="contact.html">Contact</a></li>
-                        <li class="li-navbar"><a href="about.html">Abuot us</a></li>
-                        <li class="li-navbar"><a href="signin.html">Login</a></li>
-                        <li class="li-navbar"><a href="signup.html">Sing up</a></li>
-                    </ul>
-                    <label for="check" class="bar">
-                        <span class="fa fa-bars" id="bars"></span>
-                        <span class="fa fa-times" id="times"></span>
-                    </label>
-            </nav>
+      <input type="checkbox" id="check" />
+      <nav class="nav-container">
+        <div class="icon">
+          <a href="/index.html"> Auto <b style="color: red">Auction</b></a>
+        </div>
+        <div class="search-item">
+          <input type="search" placeholder="Search here" />
+          <span class="fa fa-search"></span>
+        </div>
+        <ul class="navbar-ul" id="nav-bar">
+          <li class="li-navbar"></li>
+        </ul>
+        <label for="check" class="bar">
+          <span class="fa fa-bars" id="bars"></span>
+          <span class="fa fa-times" id="times"></span>
+        </label>
+      </nav>
     </header>
     <main>
-        <div id="overlay">
-            <form id="contact-form" onsubmit="event.preventDefault(); validateForm()" >
-                <h3 class="text-white font-medium " > CONTACT US</h3>
-                <label class="text-white font-medium text-3xl" for="name">Name</label>
-                <input type="text" id="name" placeholder=" Your Name">
-                <small class="error"></small>
-                <label class="text-white font-medium text-3xl"  for="email">Email</label>
-                <input type="text" id="email" placeholder=" Your Email">
-                <small class="error"></small>
-                <label class="text-white font-medium text-3xl" for="message">Message</label>
-                <textarea id="message" placeholder=" Your Message" row="6"></textarea>
-                <small class="error"></small>
-                <div class="center"></div>
-                <button class="p-3 mt-4 w-full text-black bg-white font-semibold rounded text-2xl text-center hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300" type="submit" >SEND MESSAGE</button>
-                <p class="font-bold text-4xl text-center " id="success"></p>
-            </form>
+      <div id="overlay">
+        <form
+          id="contact-form"
+          onsubmit="event.preventDefault(); validateForm()">
+          <h3 class="text-white font-medium">CONTACT US</h3>
+          <label class="text-white font-medium text-3xl" for="name">Name</label>
+          <input type="text" id="name" placeholder=" Your Name" />
+          <small class="error"></small>
+          <label class="text-white font-medium text-3xl" for="email"
+            >Email</label
+          >
+          <input type="text" id="email" placeholder=" Your Email" />
+          <small class="error"></small>
+          <label class="text-white font-medium text-3xl" for="message"
+            >Message</label
+          >
+          <textarea id="message" placeholder=" Your Message" row="6"></textarea>
+          <small class="error"></small>
+          <div class="center"></div>
+          <button
+            class="p-3 mt-4 w-full text-black bg-white font-semibold rounded text-2xl text-center hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300"
+            type="submit">
+            SEND MESSAGE
+          </button>
+          <p class="font-bold text-4xl text-center" id="success"></p>
+        </form>
+      </div>
+      <footer>
+        <div class="footer-container">
+          <nav class="footer-navv">
+            <ul>
+              <h3>CONTACT US</h3>
+              <br />
+              <li>Osloveien 14, 0176</li>
+              <br />
+              <li>Telefone: +47 45454546</li>
+              <br />
+              <li>Email: AutoAuction@liv.com</li>
+            </ul>
+          </nav>
+          <nav class="footer-navv">
+            <ul>
+              <h3>ACCESIBILITY</h3>
+              <br />
+              <li>Service</li>
+              <br />
+              <li>Apply Job</li>
+              <br />
+              <li>Sell Your Car</li>
+            </ul>
+          </nav>
+          <nav class="footer-navv">
+            <ul>
+              <h3>ABOUT US</h3>
+              <br />
+              <li>Terms Of Use</li>
+              <br />
+              <li>Our Team</li>
+              <br />
+              <li>Blog</li>
+            </ul>
+          </nav>
         </div>
-        <footer>
-            <div  class="footer-container">
-              <nav class="footer-navv">
-                <ul>
-                  <h3>CONTACT US</h3>
-                  <br/>
-                  <li>Osloveien 14, 0176</li><br>
-                  <li>Telefone: +47 45454546</li><br>
-                  <li>Email: AutoAuction@liv.com</li>
-                </ul>
-              </nav>
-              <nav class="footer-navv">
-                <ul>
-                  <h3>ACCESIBILITY</h3>
-                  <br>
-                  <li>Service</li><br>
-                  <li>Apply Job</li><br>
-                  <li>Sell Your Car</li>
-                </ul>
-              </nav>
-              <nav class="footer-navv">
-                <ul>
-                  <h3>ABOUT US</h3>
-                  <br>
-                  <li>Terms Of Use </li><br>
-                  <li>Our Team </li><br>
-                  <li>Blog</li>
-                </ul>
-              </nav>
-            </div>
-        </footer>
-        <p class="text-center text-white m-2 font-semibold">Copyright © 2023 Auto Auction. All Rights Reserved</p>
+      </footer>
+      <p class="text-center text-white m-2 font-semibold">
+        Copyright © 2023 Auto Auction. All Rights Reserved
+      </p>
     </main>
-    <script  src="./script/contact.js" defer></script>
-    <script  src="/script/index.js" defer></script>
-</body>
+    <script src="./script/contact.js" defer></script>
+    <script type="module" src="/script/index.js" defer></script>
+    <script type="module" src="/script/auth.js" defer></script>
+  </body>
 </html>
-
-
