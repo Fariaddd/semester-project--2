@@ -1,14 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style/style.css" />
-  </head>
-  <body>
-    <h1>frwds</h1>
-    <script type="module" src="/script/auth.js" defer></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="http://kit.fontawesome.com/67c66657c7.js"></script>
+</head>
+<body>
+    <header>
+          <input type="checkbox" id="check">
+          <nav class="nav-container">
+            <div class="icon" > <a href="/index.html">  Auto <b style="color: red;">Auction</b></a></div>              <div class="search-item">
+                  <input type="search" placeholder="Search here">
+                  <span class="fa fa-search"></span>
+            </div>
+                  <ul class="navbar-ul" id="nav-bar">
+                      <li class="li-navbar"></li>
+                  </ul>
+                  <label for="check" class="bar">
+                      <span class="fa fa-bars" id="bars"></span>
+                      <span class="fa fa-times" id="times"></span>
+                  </label>
+          </nav>
+    </header>
+    <main class="mb-24 p-4 md:pl-52 gap-6 md:px-12 lg:pt-0 lg:px-8 lg:w-4/5 lg:m-auto">
+        <div id="edit_img_overlay" class=" hidden modal w-full h-full bg-black fixed left-0 yop-0 flex items-center justify-center">
+        </div>
+        <section class="flex flex-col lg:flex-row-reverse lg:justify-evenly lg:gap-12">
+            <div class="lg:w-1/2 flex justify-end mb-12 lg:mb-0"
+            id="profile_info">
+            </div>
+         <div class="lg:w-2/3"> 
+            <div 
+             id="active" class="rounded-md border m-3 border-blue p-4 md:p-6 w-full flex flex-col gap-4">
+            <div class="flex flex-row gap-4 md:gap-6 font-quickS text-blue pb-4">
+                <button id="active_listings_button"
+                    disabled
+                    class="active-button w-1/2 h-14 text-2xl  text-white border border-gray-100 rounded-md"
+                 >Active listing
+                </button>
+                <button id="active_bids_button" class="w-1/2 h-14 text-2xl shodow-lg text-white border border-gray-100 rounded-md">
+                    Active bids
+                </button>
+            </div>
+             <div id="show_active" class="flex flex-col gap-6"></div>
+             </div>
+         </div>
+        </section>
+        <section class="flex flex-col gap-4 pt-6 lg:w-2/3 m-auto">
+            <div class="w-full font-cool text-blue text-3xl pt-20 text-white pb-1 mb-10 border-b border-blue px-2">
+                My listing
+            </div>
+            <div class="flex flex-col gap-8" id="my_listings_div"></div>
+        <div id="edit_listing_overlay" class="hidden edit w-full h-full bg-black bg-opacity-70 fixed left-0 top-0 flex items-center justify-center"></div>
+        </section>
+        <section id="bigScreen" class="hidden md:inine"></section>
+        <section id="mobilScreen" class="md:hidden"></section>
+    </main>
+ 
+   
+      
+        <script type="module" src="/script/index.js" defer></script>
+        <script type="module"  src="/script/auth.js" defer></script>
+        <script type="module"  src="/script/profile.js" defer></script>
+    
+</body>
 </html>

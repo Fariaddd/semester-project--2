@@ -40,8 +40,8 @@ function headerBar() {
             <li class="li-navbar  nav-container "> <a href="/listing.html" class="${
               pathname === "/listing.html" ? "" : ""
             }"</a>Listing</li>
-            <li class="li-navbar  nav-container "> <a href="/index.html" class="${
-              pathname === "/index.html" ? "" : ""
+            <li class="li-navbar  nav-container "> <a href="/profile.html" class="${
+              pathname === "/profile.html" ? "" : ""
             }"</a>Account</li>
             <li class="li-navbar  nav-container  text-white text-xl font-normal"><button id="logOut">LogOut</button></li>
             `;

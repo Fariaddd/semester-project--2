@@ -1,5 +1,7 @@
-import { clearStorage } from "./storage";
+import { clearStorage, getToken ,getUserName } from "./storage";
 import { headerBar } from "./auth.js";
+
+
 
 headerBar();
 const logOutBtn = document.querySelector("#logOut");
@@ -10,3 +12,8 @@ if (logOutBtn) {
     window.location.replace("/signIn.html");
   });
 }
+
+
+
+
+

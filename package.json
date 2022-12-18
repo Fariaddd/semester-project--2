@@ -22,6 +22,7 @@
   "homepage": "https://github.com/Fariaddd/semester-project--2#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.13",
+    "dayjs": "^1.11.7",
     "postcss": "^8.4.19",
     "prettier": "2.8.1",
     "tailwindcss": "^3.2.4",
@@ -29,6 +30,6 @@
   },
   "dependencies": {
     "build": "^0.1.4",
-    "moment": "^2.29.4"
+    "relative-time-format": "^1.1.6"
   }
 }
