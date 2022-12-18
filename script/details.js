@@ -25,9 +25,7 @@ async function getListById() {
             "Authorization": `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzI1LCJuYW1lIjoiRmxvdXBwcHkiLCJlbWFpbCI6IkZsb3VwcHB5QHN0dWQubm9yb2ZmLm5vIiwiYXZhdGFyIjpudWxsLCJjcmVkaXRzIjoxMDAwLCJ3aW5zIjpbXSwiaWF0IjoxNjcwNTQ0NzcyfQ.sfePcUIJX8cYtAa3V8YIter6PoOqfpVGhmMybIzGRC8`
         }
     })
-    console.log("response: ", response);
     const data = await response.json();
-    console.log("data: ", data);
     listTitle.innerHTML = data.title
     listId.innerHTML = data.id
     listDesc.innerHTML = data.description
@@ -62,10 +60,12 @@ biddingForm.addEventListener("submit", function (event) {
             const data = await response.json();
             console.log(data);
             console.log("Bid on a list SUCCEEDED!!  🥳 🤗🤗");
+            
         } else {
             const err = await response.json();
             console.log(err);
             console.log("CREATE LIST FAILED Hesham!!");
+            
         }
         biddingForm.reset();
     }
