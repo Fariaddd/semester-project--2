@@ -39,10 +39,10 @@ createForm.addEventListener("submit", function (event) {
             },
             body: JSON.stringify(listingData)
         })
-        console.log("list creation response: ", response)
+   
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            // console.log(data);
             console.log("CREATE LIST SUCCEEDED!!  🥳 🤗🤗");
             location.href = ("/profile.html")
         } else {

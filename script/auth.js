@@ -31,16 +31,20 @@ function headerBar() {
             <li class="li-navbar  nav-container  " > <a href="/welcome.html" class="${
               pathname === "/welcome.html" ? "" : ""
             }"</a>Home</li>
-            <li class="li-navbar  nav-container "><a href="/contact.html" class="${
+
+            <li class="li-navbar  nav-container  "><a href="/contact.html" class="${
               pathname === "/contact.html" ? "" : ""
             }"</a>Contact</li> 
-            <li class="li-navbar  nav-container "> <a href="/newListing.html" class="${
+
+            <li class="li-navbar  nav-container" id="newlisting_li"> <a href="/newListing.html" class="${
               pathname === "/newListing.html" ? "" : ""
             }"</a>newListing</li>
-            <li class="li-navbar  nav-container "> <a href="/listing.html" class="${
+
+            <li class="li-navbar  nav-container" id="listings_li" > <a href="/listing.html" class="${
               pathname === "/listing.html" ? "" : ""
             }"</a>Listing</li>
-            <li class="li-navbar  nav-container "> <a href="/profile.html" class="${
+
+            <li class="li-navbar  nav-container" id="myprofile_li" > <a href="/profile.html" class="${
               pathname === "/profile.html" ? "" : ""
             }"</a>Account</li>
             <li class="li-navbar  nav-container  text-white text-xl font-normal"><button id="logOut">LogOut</button></li>
